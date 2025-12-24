@@ -38,6 +38,7 @@
             radioButton1 = new RadioButton();
             label1 = new Label();
             label4 = new Label();
+            checkBoxSifreGoster = new CheckBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -76,15 +77,15 @@
             label2.TabIndex = 1;
             label2.Text = "KULLANICI ADI:";
             label2.Click += label2_Click;
-            // 
+            //
             // textBox1
-            // 
-            textBox1.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            textBox1.Location = new Point(354, 210);
-            textBox1.Multiline = true;
+            //
+            textBox1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            textBox1.Location = new Point(354, 207);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
+            textBox1.Size = new Size(200, 27);
             textBox1.TabIndex = 2;
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
             // 
             // label3
             // 
@@ -97,24 +98,37 @@
             label3.Size = new Size(60, 21);
             label3.TabIndex = 3;
             label3.Text = "ŞİFRE:";
-            // 
+            //
             // textBox2
-            // 
+            //
             textBox2.BackColor = Color.White;
-            textBox2.ForeColor = Color.MediumTurquoise;
-            textBox2.Location = new Point(354, 262);
-            textBox2.Multiline = true;
+            textBox2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            textBox2.ForeColor = Color.Black;
+            textBox2.Location = new Point(354, 255);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
+            textBox2.Size = new Size(200, 27);
             textBox2.TabIndex = 4;
-            // 
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
+            //
+            // checkBoxSifreGoster
+            //
+            checkBoxSifreGoster.AutoSize = true;
+            checkBoxSifreGoster.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            checkBoxSifreGoster.ForeColor = Color.Black;
+            checkBoxSifreGoster.Location = new Point(354, 288);
+            checkBoxSifreGoster.Name = "checkBoxSifreGoster";
+            checkBoxSifreGoster.Size = new Size(108, 19);
+            checkBoxSifreGoster.TabIndex = 6;
+            checkBoxSifreGoster.Text = "Şifremi Göster";
+            checkBoxSifreGoster.UseVisualStyleBackColor = true;
+            //
             // radioButton1
-            // 
+            //
             radioButton1.AutoSize = true;
             radioButton1.BackColor = Color.DarkTurquoise;
             radioButton1.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
             radioButton1.ForeColor = Color.White;
-            radioButton1.Location = new Point(330, 331);
+            radioButton1.Location = new Point(380, 331);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(77, 23);
             radioButton1.TabIndex = 5;
@@ -151,6 +165,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(label4);
             Controls.Add(radioButton1);
+            Controls.Add(checkBoxSifreGoster);
             Controls.Add(textBox2);
             Controls.Add(label3);
             Controls.Add(textBox1);
@@ -177,5 +192,6 @@
         private RadioButton radioButton1;
         private Label label1;
         private Label label4;
+        private CheckBox checkBoxSifreGoster;
     }
 }
